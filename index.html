@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delight Restaurant | Authentic Cuisine Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Delight Restaurant</div>
+    <div class="menu-toggle" id="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+      <li><a href="#menu"><i class="fas fa-utensils"></i> Menu</a></li>
+      <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+      <li><a href="#reservation"><i class="fas fa-calendar-check"></i> Reservation</a></li>
+      <li><a href="#location"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="overlay">
+      <h1>Welcome to Delight Restaurant</h1>
+      <p>Where Tradition Meets Innovation</p>
+      <a href="#reservation" class="cta-button">Reserve Your Table</a>
+    </div>
+  </header>
+
+  <section id="about" class="content-section">
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            At <strong>Delight Restaurant</strong>, we believe that great food brings people together.
+            Located in the heart of Hyderabad, we blend traditional flavors with modern culinary
+            techniques to create a truly unforgettable dining experience.
+          </p>
+          <p>
+            Our passionate chefs use only the freshest, locally sourced ingredients to craft dishes
+            that celebrate both Indian and international cuisine. Whether you're craving a cozy dinner,
+            a family gathering, or a celebration with friends, Delight Restaurant is your perfect spot.
+          </p>
+          <p>
+            We pride ourselves not just on our food, but also on the warm, welcoming atmosphere and
+            attentive service that keeps our guests coming back. Come experience a world of flavor,
+            comfort, and joy — one plate at a time.
+          </p>
+          <div class="signature">
+            <img src="https://i.pravatar.cc/150?img=12" alt="Chef's Signature">
+            <div>
+              <p>Chef Rajesh Kumar</p>
+              <span>Master Chef & Founder</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Restaurant Interior">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="content-section">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-categories">
+        <button class="category-btn active" data-category="all">All Items</button>
+        <button class="category-btn" data-category="veg">Vegetarian</button>
+        <button class="category-btn" data-category="nonveg">Non-Vegetarian</button>
+        <button class="category-btn" data-category="dessert">Desserts</button>
+        <button class="category-btn" data-category="drink">Drinks</button>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item" data-category="veg">
+          <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="Margherita Pizza">
+          <div class="menu-item-info">
+            <h3>Margherita Pizza</h3>
+            <p>Classic pizza with tomato sauce, mozzarella, and fresh basil</p>
+            <div class="price">₹299</div>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="veg">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=999&q=80" alt="Veg Burger">
+          <div class="menu-item-info">
+            <h3>Gourmet Veg Burger</h3>
+            <p>Plant-based patty with fresh veggies and special sauce</p>
+            <div class="price">₹249</div>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="veg">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80" alt="Greek Salad">
+          <div class="menu-item-info">
+            <h3>Mediterranean Salad</h3>
+            <p>Fresh greens, feta, olives, tomatoes, and olive oil dressing</p>
+            <div class="price">₹229</div>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Chicken Spaghetti">
+          <div class="menu-item-info">
+            <h3>Chicken Spaghetti</h3>
+            <p>Spaghetti with grilled chicken in a rich tomato sauce</p>
+            <div class="price">₹349</div>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1150&q=80" alt="Chicken Curry">
+          <div class="menu-item-info">
+            <h3>Hyderabadi Chicken Curry</h3>
+            <p>Traditional spicy chicken curry with aromatic spices</p>
+            <div class="price">₹329</div>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1611599537845-1c7aca0091c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Fish Fry">
+          <div class="menu-item-info">
+            <h3>Spicy Fish Fry</h3>
+            <p>Crispy fish fillet marinated in traditional spices</p>
+            <div class="price">₹379</div>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1127&q=80" alt="Chocolate Cake">
+          <div class="menu-item-info">
+            <h3>Chocolate Decadence</h3>
+            <p>Rich chocolate cake with molten center and vanilla ice cream</p>
+            <div class="price">₹199</div>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Gulab Jamun">
+          <div class="menu-item-info">
+            <h3>Gulab Jamun</h3>
+            <p>Traditional Indian sweet in rose-flavored syrup</p>
+            <div class="price">₹149</div>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="drink">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1257&q=80" alt="Mango Lassi">
+          <div class="menu-item-info">
+            <h3>Mango Lassi</h3>
+            <p>Refreshing yogurt drink with sweet mango pulp</p>
+            <div class="price">₹129</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="content-section">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Restaurant Interior">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Dining Area">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Delicious Dish">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Another Dish">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Chef Cooking">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Fresh Ingredients">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservation" class="content-section">
+    <div class="container">
+      <div class="reservation-container">
+        <div class="reservation-info">
+          <h2>Make a Reservation</h2>
+          <p>Book your table in advance and enjoy a seamless dining experience. Our team will ensure you have the perfect spot for your occasion.</p>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +91-9876543210</p>
+            <p><i class="fas fa-envelope"></i> reservations@delightrestaurant.com</p>
+            <p><i class="fas fa-clock"></i> Open: 11:00 AM - 11:00 PM (Mon-Sun)</p>
+          </div>
+        </div>
+        <form id="reservationForm">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="tel" placeholder="Phone Number" required />
+          <input type="date" required />
+          <input type="time" required />
+          <select required>
+            <option value="" disabled selected>Number of Guests</option>
+            <option value="1">1 Person</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5">5 People</option>
+            <option value="6+">6+ People</option>
+          </select>
+          <textarea placeholder="Special Requests"></textarea>
+          <button type="submit">Reserve Now</button>
+        </form>
+      </div>
+      <p id="resStatus" class="form-status"></p>
+    </div>
+  </section>
+
+  <section id="location" class="content-section">
+    <div class="container">
+      <h2>Our Location</h2>
+      <div class="location-container">
+        <div class="location-info">
+          <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Banjara Hills, Hyderabad, Telangana 500034, India</p>
+          <p><i class="fas fa-subway"></i> Nearest Metro: Jubilee Hills Station (1.2 km)</p>
+          <p><i class="fas fa-parking"></i> Valet Parking Available</p>
+          <div class="opening-hours">
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 11:00 AM - 11:00 PM</p>
+            <p>Saturday - Sunday: 10:00 AM - 12:00 AM</p>
+          </div>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.261318381591!2d78.41024231535323!3d17.44748950534258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9158f201b205%3A0x11c9155d3cfb5b4b!2sBanjara%20Hills%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1689765668627!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>We'd love to hear from you! Reach out with any questions, feedback, or special requests.</p>
+          
+          <div class="contact-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Address</h4>
+              <p>123 Food Street, Banjara Hills, Hyderabad, Telangana 500034, India</p>
+            </div>
+          </div>
+          
+          <div class="contact-detail">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+91-9876543210</p>
+            </div>
+          </div>
+          
+          <div class="contact-detail">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>contact@delightrestaurant.com</p>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tripadvisor"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="contactForm">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="tel" placeholder="Phone Number" />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <p id="formStatus" class="form-status"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="content-section">
+    <div class="container">
+      <h2>From Our Blog</h2>
+      <div class="blog-grid">
+        <article class="blog-post">
+          <div class="blog-content">
+            <h3>5 Summer Dishes You Must Try</h3>
+            <p class="blog-meta">Posted on June 15, 2025 | By Chef Rajesh</p>
+            <p>Discover our refreshing seasonal menu designed to beat the heat with light, flavorful dishes perfect for summer dining.</p>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        
+        <article class="blog-post">
+          <div class="blog-content">
+            <h3>Chef's Secret Pasta Recipe</h3>
+            <p class="blog-meta">Posted on May 28, 2025 | By Chef Priya</p>
+            <p>Our chef shares the secret behind our most loved spaghetti dish that keeps customers coming back for more.</p>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        
+        <article class="blog-post">
+          <div class="blog-content">
+            <h3>Perfect Wine Pairings for Indian Cuisine</h3>
+            <p class="blog-meta">Posted on May 10, 2025 | By Sommelier Anil</p>
+            <p>Learn how to enhance your dining experience with our expert recommendations for pairing wines with Indian dishes.</p>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <a href="#" class="view-all">View All Blog Posts <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Delight Restaurant</h3>
+        <p>Experience the perfect blend of traditional flavors and modern culinary techniques in the heart of Hyderabad.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Opening Hours</h3>
+        <ul>
+          <li>Monday - Friday: 11:00 AM - 11:00 PM</li>
+          <li>Saturday: 10:00 AM - 12:00 AM</li>
+          <li>Sunday: 10:00 AM - 11:00 PM</li>
+          <li>Holidays: 10:00 AM - 11:00 PM</li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Contact Info</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Food Street, Hyderabad</li>
+          <li><i class="fas fa-phone"></i> +91-9876543210</li>
+          <li><i class="fas fa-envelope"></i> contact@delightrestaurant.com</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Delight Restaurant. All Rights Reserved. | Designed with <i class="fas fa-heart"></i></p>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
